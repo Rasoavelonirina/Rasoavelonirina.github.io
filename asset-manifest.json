@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.e7c41540.css",
-    "main.js": "/static/js/main.a8ef9ae6.js",
+    "main.js": "/static/js/main.cfe4e250.js",
     "static/media/portfolio.gif": "/static/media/portfolio.ed6c89f1485f23014ebd.gif",
+    "static/media/danielson_profile.png": "/static/media/danielson_profile.c32ae54a10a1e14d72d4.png",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/tiktok_logo.png": "/static/media/tiktok_logo.bf41765c122d4b0f3fee.png",
@@ -64,10 +65,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.e7c41540.css.map": "/static/css/main.e7c41540.css.map",
-    "main.a8ef9ae6.js.map": "/static/js/main.a8ef9ae6.js.map"
+    "main.cfe4e250.js.map": "/static/js/main.cfe4e250.js.map"
   },
   "entrypoints": [
     "static/css/main.e7c41540.css",
-    "static/js/main.a8ef9ae6.js"
+    "static/js/main.cfe4e250.js"
   ]
 }
