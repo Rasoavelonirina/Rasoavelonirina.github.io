@@ -2,7 +2,7 @@
   "private": true,
   "name": "rasDanielson",
   "version": "0.1.0",
-  "homepage": "https://rasoa-danielson.github.io",
+  "homepage": "https://rasoavelonirina.github.io",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
