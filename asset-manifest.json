@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e7c41540.css",
-    "main.js": "/static/js/main.e8349545.js",
+    "main.js": "/static/js/main.467da866.js",
     "static/media/portfolio.gif": "/static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/danielson_profile.png": "/static/media/danielson_profile.c32ae54a10a1e14d72d4.png",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
@@ -70,10 +70,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.e7c41540.css.map": "/static/css/main.e7c41540.css.map",
-    "main.e8349545.js.map": "/static/js/main.e8349545.js.map"
+    "main.467da866.js.map": "/static/js/main.467da866.js.map"
   },
   "entrypoints": [
     "static/css/main.e7c41540.css",
-    "static/js/main.e8349545.js"
+    "static/js/main.467da866.js"
   ]
 }
