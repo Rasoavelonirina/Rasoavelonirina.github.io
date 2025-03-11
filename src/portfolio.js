@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Danielson RASOAVELONIRINA Portfolio",
     type: "website",
-    url: "http://rasdanielson.com/",
+    url: "https://rasoavelonirina.github.io/",
   },
 };
 
@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "Passionate about data engineering, I strive to transform complex sets of information into simple, innovative solutions. Throughout my career, I have explored many facets of this fascinating field. Discover my world with this portfolio",
   resumeLink:
-    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
+    "https://drive.google.com/file/d/1zYcE7Zc_rPQc4VZyAeN8FIe0Ixk46NN1/view?usp=drive_link",
   portfolio_repository: "https://github.com/Rasoavelonirina/Rasoavelonirina.github.io",
   githubProfile: "https://github.com/Rasoavelonirina",
 };
@@ -48,7 +48,7 @@ const socialMediaLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/rasoavelonirina-danielson-16399a11b",
+    link: "https://www.linkedin.com/in/danielson1406",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
@@ -217,8 +217,8 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Building a simple responsive website front end",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Developing a simple web based application with Django or Flask",
+        "⚡ Creating application backend in Node, Django & Flask",
       ],
       softwareSkills: [
         {
@@ -337,27 +337,27 @@ const degrees = {
   degrees: [
     {
       title: "Ecole Superieur Polytechnique d'Antananarivo (E.S.P.A)",
-      subtitle: "B.Tech. in Computer Engineering",
+      subtitle: "Master in Telecommunication",
       logo_path: "Polytechnique-logo.png",
       alt_name: "E.S.P.A",
-      duration: "2013 - 2016",
+      duration: "2016 - 2018",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Specialization in image processing systems",
+        "⚡ Development of an ML object recognition model using OPEN CV",
+        "⚡ Development of an ML model for TELECOMMUNICATION CUSTOMER CHURN PREDICTION using Matlab",
       ],
       website_link: "https://www.polytechnique.mg",
     },
     {
       title: "Ecole Superieur Polytechnique d'Antananarivo (E.S.P.A)",
-      subtitle: "M.S. in Computer Science",
+      subtitle: "Telecommunication license",
       logo_path: "Polytechnique-logo.png",
-      alt_name: "Indiana University Bloomington",
-      duration: "2016 - 2018",
+      alt_name: "E.S.P.A",
+      duration: "2013 - 2016",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "⚡ I've learned the basics of GSM communication (2g, 3G)",
+        "⚡ I have studied the different systems and algorithms of image, video and sound compression.",
+        "⚡ I also learned the fundamental mathematics of image processing and GSM signal processing.",
       ],
       website_link: "https://www.polytechnique.mg",
     },
@@ -380,17 +380,61 @@ const certifications = {
       subtitle: "- UDACITY",
       logo_path: "udacity-logo.png",
       certificate_link:
-        "https:/www.udacity.com/certificate/e/c3180348-4e3f-11ea-8640-8f65f9dfb855",
+        "https://www.udacity.com/certificate/e/c3180348-4e3f-11ea-8640-8f65f9dfb855",
       alt_name: "UDACITY",
       color_code: "#ffffffff",
     },
-  
     {
-      title: "DATA ENGINEER GCP",
+      title: "Data Engineering, Big Data, and Machine Learning on GCP",
       subtitle: "- GCP Training",
       logo_path: "google_logo.png",
       certificate_link:
-        "Https://coursera.org/verify/P4HV6Q6WQS98",
+        "https://coursera.org/share/93ffd740c37fe1ef562b5c68a7e56bc0",
+      alt_name: "Google",
+      color_code: "#0C9D5899",
+    },
+    {
+      title: "Serverless Data Analysis with Google BigQuery and Cloud Dataflow",
+      subtitle: "- GCP Training",
+      logo_path: "google_logo.png",
+      certificate_link:
+        "https://coursera.org/share/0ff38ffbdd0476e33469ff21b37173ae",
+      alt_name: "Google",
+      color_code: "#0C9D5899",
+    },
+    {
+      title: "Resilient Streaming Systems on Google Cloud Platform",
+      subtitle: "- GCP Training",
+      logo_path: "google_logo.png",
+      certificate_link:
+        "https://coursera.org/share/018c62506216162bb5864dd669913204",
+      alt_name: "Google",
+      color_code: "#0C9D5899",
+    },
+    {
+      title: "Google Cloud Big Data and Machine Learning Fundamentals",
+      subtitle: "- GCP Training",
+      logo_path: "google_logo.png",
+      certificate_link:
+        "https://coursera.org/share/97b47cbf015694f5dbc27111d541d6e8",
+      alt_name: "Google",
+      color_code: "#0C9D5899",
+    },
+    {
+      title: "Serverless Machine Learning with Tensorflow on Google Cloud Platform",
+      subtitle: "- GCP Training",
+      logo_path: "google_logo.png",
+      certificate_link:
+        "https://coursera.org/share/a583d11bfe3722d569d4645423d8290c",
+      alt_name: "Google",
+      color_code: "#0C9D5899",
+    },
+    {
+      title: "Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform",
+      subtitle: "- GCP Training",
+      logo_path: "google_logo.png",
+      certificate_link:
+        "https://coursera.org/share/4bb503285f409625e828c2c55a9ed708",
       alt_name: "Google",
       color_code: "#0C9D5899",
     }
@@ -417,18 +461,26 @@ const experience = {
           duration: "Avril 2022 - Present",
           location: "Antananarivo, Madagascar",
           description:
-            "...",
-          color: "#000000",
+            [
+              "⚡At Orange Madagascar, I was responsible for both data quality and the improvement of existing processing procedures. This involved refactoring shell, awk and php code into python. ",
+              "⚡One of my main goals was to improve the performance of Talend and Nify jobs. ",
+              "⚡As data quality manager, I developed a simple statistical model to detect data anomalies then improved it using ML models. ",
+              "⚡At the very beginning of my contract, I was involved in drawing up dashboards for the business teams using Qlik Sense and Power BI."
+            ],
+            color: "#000000",
         },
         {
           title: "Data Manager & Backend Developer",
           company: "RAVATE.",
           company_url: "https://www.ravate.com/",
           logo_path: "ravate_logo.png",
-          duration: "June 2023 - Present",
+          duration: "Mars 2021 - Fevrier 2022",
           location: "Remote: Réunion",
-          description:
-            "...",
+          description:[
+            "⚡Ravate is an e-commerce company. My role there was to design pipelines for data collection and preparation. ",
+            "⚡At the same time, I was responsible for designing data storage solutions, such as data warehouses and data lakes. ", 
+            "⚡It was at RAVATE that I became familiar with Terraform for the deployment of our API solutions to AWS.",
+          ],
           color: "#000000",
         },
         {
@@ -436,75 +488,45 @@ const experience = {
           company: "Argos Veterinaire.",
           company_url: "https://www.argos-veterinaire.com/",
           logo_path: "argos_veterinaire_logo.png",
-          duration: "Nov 2017 - Dec 2017",
+          duration: "Decembre 2020 - Mars 2021",
           location: "Remote: Montpellier, France",
           description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-          color: "#fc1f20",
+          [
+            "⚡Data pre-processing for odoo compliance. The main aim of the project was to migrate data from the old platform to odoo. ",
+            "⚡Development of new DAGs and TASKs with Airflow, enabling customers to migrate their own data.",
+          ],
+            color: "#fc1f20",
         },
         {
           title: "Talend Developer",
           company: "Ghanty Groupe.",
           company_url: "https://www.ghanty.re/",
           logo_path: "groupe_ghanty_logo.jpeg",
-          duration: "Nov 2017 - Dec 2017",
+          duration: "2020 - Mars 2021",
           location: "Remote: Réunion",
           description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-          color: "#fc1f20",
+          [
+            "⚡At Ghanty, As a talend developer, I had to develop different types of JOB to meet the company's requirements. These included synchronization JOBs, cleaning JOBs, real-time processing JOBs and, not forgetting, reporting JOBs."
+          ],
+            color: "#fc1f20",
         },
         {
-          title: "Talend Developer",
-          company: "E-sanandro.",
-          company_url: "https://www.esanandro.com",
-          logo_path: "esanandro_logo.jpg",
-          duration: "Nov 2017 - Dec 2017",
+          title: "Data Scientist",
+          company: "E-Tech Consulting.",
+          company_url: "https://etechconsulting-mg.com",
+          logo_path: "etech.png",
+          duration: "Nov 2018 - Dec 2023",
           location: "Antananarivo, Madagascar",
           description:
-            "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
+          [
+            "⚡Development of a conversational chatbot based on Google Assitant. This chatbot has the ability to converse via IP phones. ",
+            "⚡Computer vision for home object recognition. ",
+            "⚡Lip-synchronization as an introduction to 4D translation. "
+          ],
           color: "#fc1f20",
         }
       ],
     },
-    {
-      title: "Internships",
-      experiences: [
-        {
-          title: "Machine Learning Intern",
-          company: "TikTok Inc.",
-          company_url: "https://www.tiktok.com/en/",
-          logo_path: "tiktok_logo.png",
-          duration: "May 2022 - Aug 2022",
-          location: "San Francisco, USA",
-          description:
-            "Building new features on the backend recommendation system, specifically ranking algorithms for Ads that touch hundreds of millions of people around the world. Improving online and offline content ranking algorithms by performing hard sample data replays for training steps.",
-          color: "#000000",
-        },
-        {
-          title: "Data Science Research Intern",
-          company: "Delhivery Pvt. Ltd.",
-          company_url: "https://www.delhivery.com/",
-          logo_path: "delhivery_logo.png",
-          duration: "May 2019 - Sept 2019",
-          location: "Gurgaon, Haryana",
-          description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
-          color: "#ee3c26",
-        },
-        {
-          title: "Data Science Intern",
-          company: "Intel Indexer LLC",
-          company_url:
-            "https://opencorporates.com/companies/us_dc/EXTUID_4170286",
-          logo_path: "intel_logo.jpg",
-          duration: "Nov 2018 - Dec 2018",
-          location: "Work From Home",
-          description:
-            "This is financial Solution Company. I have made Supervised Learning model for the company which can perform time series analysis on Stock price data for 32 companies. I have built LSTM Neural Networks Model and trained the data of 32 companies for last 2 years. This model is also used for forecasting.",
-          color: "#0071C5",
-        },
-      ],
-    }
   ],
 };
 
@@ -553,7 +575,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "danielson_profile.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with large-scale projects. As long as we're talking about data processing or data reporting, I'm ready to give my all to satisfy my customers.",
   },
   blogSection: {
     title: "Blogs",
@@ -575,7 +597,7 @@ const contactPageData = {
   },
   phoneSection: {
     title: "Telephone",
-    subtitle: "+261 34 71 147 49/+261 32 19 152 16",
+    subtitle: "(+261)34-71-147-49 / (+261)32-19-152-16",
   },
 };
 
@@ -591,6 +613,6 @@ export {
   experience,
   projectsHeader,
   publicationsHeader,
-  publications,
+  //publications,
   contactPageData
 };

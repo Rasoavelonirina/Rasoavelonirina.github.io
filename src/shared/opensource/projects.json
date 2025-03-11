@@ -2,9 +2,9 @@
   "data": [
     {
       "id": "R_kgDOJWL0-g",
-      "name": "mdp-diffusion",
+      "name": "CUSTOMER CHURN PREDICTION",
       "createdAt": "2023-04-13T04:18:19Z",
-      "url": "https://github.com/ashutosh1919/mdp-diffusion",
+      "url": "https://www.kaggle.com/code/bhartiprasad17/customer-churn-prediction/notebook",
       "description": "Text-guided image editing by manipulating diffusion path without any training.",
       "isFork": false,
       "languages": [
