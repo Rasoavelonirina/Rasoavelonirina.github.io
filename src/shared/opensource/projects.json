@@ -2,10 +2,10 @@
   "data": [
     {
       "id": "R_kgDOJWL0-g",
-      "name": "CUSTOMER CHURN PREDICTION",
+      "name": "Spark Data Pipelines",
       "createdAt": "2023-04-13T04:18:19Z",
-      "url": "https://www.kaggle.com/code/bhartiprasad17/customer-churn-prediction/notebook",
-      "description": "Text-guided image editing by manipulating diffusion path without any training.",
+      "url": "https://github.com/Rasoavelonirina/dwh_spark_pipelines",
+      "description": "This project contains a framework and PySpark jobs designed to run various data processing pipelines (ETL). It aims at reusability, configurability and maintainability.",
       "isFork": false,
       "languages": [
         {
@@ -17,14 +17,14 @@
           "iconifyClass": "simple-icons:shell"
         },
         {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "logos-jupyter"
+          "name": "Apache Spark",
+          "iconifyClass": "logos:apache-spark"
         }
       ]
     },
     {
       "id": "R_kgDOG_vYHA",
-      "name": "Stremlit App Template",
+      "name": "Streamlit App Template",
       "createdAt": "2022-03-13T20:41:33Z",
       "url": "https://github.com/Rasoavelonirina/streamlit-app-template",
       "description": "A modern template for creating data analysis and business intelligence applications with Streamlit.",
@@ -33,6 +33,10 @@
         {
           "name": "Python",
           "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Streamlit",
+          "iconifyClass": "logos:streamlit"
         }
       ]
     },
@@ -40,7 +44,7 @@
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
       "name": "Portfolio Template",
       "createdAt": "2023-01-01T08:31:51Z",
-      "url": " ",
+      "url": "https://github.com/Rasoavelonirina/Rasoavelonirina.github.io",
       "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
       "isFork": false,
       "languages": [
