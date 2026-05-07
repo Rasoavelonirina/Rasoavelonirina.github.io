@@ -72,6 +72,8 @@ window.I18N = {
 
     "pipeline.source": "Sources",
 
+    "marquee.label": "— Stack technique en circulation continue",
+
     "timeline.title.part1": "Huit ans ",
     "timeline.title.part2": "à construire",
     "timeline.title.part3": " de la donnée fiable.",
@@ -206,6 +208,8 @@ window.I18N = {
     "expertise.ml.title": "Models &amp; fine-tuning",
 
     "pipeline.source": "Sources",
+
+    "marquee.label": "— Tech stack on continuous flow",
 
     "timeline.title.part1": "Eight years ",
     "timeline.title.part2": "engineering",
