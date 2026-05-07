@@ -714,6 +714,114 @@ section { position: relative; }
 }
 
 /* =============================================
+   TAG ICONS (inline in expertise cards)
+   ============================================= */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.tag-icon {
+  font-size: 0.95rem;
+  color: var(--ink-mute);
+  transition: color 0.25s ease;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+.tag:hover .tag-icon {
+  color: var(--accent);
+}
+.expertise-card:hover .tag-icon {
+  color: var(--accent-soft);
+}
+
+/* =============================================
+   MARQUEE — continuous tech logo flow
+   ============================================= */
+.marquee-section {
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  padding: 60px 0 70px;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-label {
+  font-size: 0.72rem;
+  color: var(--ink-mute);
+  margin-bottom: 28px;
+}
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  animation: marquee-scroll 60s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  flex-shrink: 0;
+  transition: transform 0.3s var(--easing);
+}
+.marquee-item:hover {
+  transform: translateY(-2px);
+}
+.marquee-item iconify-icon {
+  font-size: 2rem;
+  color: var(--ink-mute);
+  transition: color 0.4s ease, transform 0.4s var(--easing);
+  display: inline-flex;
+}
+.marquee-item:hover iconify-icon {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+.marquee-item .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.marquee-divider {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--rule);
+  flex-shrink: 0;
+}
+
+/* =============================================
    TIMELINE
    ============================================= */
 .timeline-list {
