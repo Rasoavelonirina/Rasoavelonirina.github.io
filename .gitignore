@@ -11,9 +11,13 @@
 
 
 
+# local dev tooling
+.claude/
+debug.log
+
 # misc
 .DS_Store
-.env 
+.env
 .env.local
 .env.development.local
 .env.test.local
