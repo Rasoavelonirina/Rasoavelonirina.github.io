@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" data-i18n="meta.description" content="Portfolio de Danielson Rasoavelonirina — Ingénieur de données, +8 ans d'expérience en pipelines ETL/ELT, Data Lakes, Cloud (AWS/GCP) et Business Intelligence.">
+<meta property="og:title" content="Danielson Rasoavelonirina — Data Engineer">
+<meta property="og:description" content="Data Engineer · BI Developer · Big Data & Cloud — Antananarivo · Bruxelles">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rasoavelonirina.github.io/">
+<meta name="theme-color" content="#FAF8F5">
+
+<title data-i18n="meta.title">Danielson Rasoavelonirina — Data Engineer</title>
+
+<link rel="icon" type="image/png" href="assets/img/danielson.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js" defer></script>
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Loading screen -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-text mono">DANIELSON.R</div>
+    <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+    <div class="loader-status mono" id="loaderStatus">Initializing pipeline...</div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Danielson — Home">
+      <span class="logo-mark">DR</span>
+      <span class="logo-text">Danielson<span class="dot">.</span></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">À propos</a>
+      <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+      <a href="#parcours" data-i18n="nav.parcours">Parcours</a>
+      <a href="#projets" data-i18n="nav.projets">Projets</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <div class="lang-toggle" id="langToggle">
+        <span data-lang="fr" class="active">FR</span>
+        <span class="divider">/</span>
+        <span data-lang="en">EN</span>
+      </div>
+    </div>
+    <button class="nav-mobile" id="navMobile" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <!-- Animated DAG canvas background -->
+  <canvas class="hero-canvas" id="dagCanvas"></canvas>
+  <div class="hero-grid-overlay"></div>
+
+  <div class="container hero-container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="mono eyebrow reveal" data-i18n="hero.eyebrow">Data Engineer · Antananarivo → Bruxelles</div>
+        <h1 class="display hero-title">
+          <span class="line"><span class="word" data-i18n="hero.title.line1">Donner du sens</span></span>
+          <span class="line"><span class="word" data-i18n="hero.title.line2">aux données,</span></span>
+          <span class="line"><em class="word" data-i18n="hero.title.line3">une ligne</em></span>
+          <span class="line"><em class="word" data-i18n="hero.title.line4">à la fois.</em></span>
+        </h1>
+        <div class="hero-meta reveal">
+          <span class="status"><span class="status-dot"></span><span data-i18n="hero.status">Disponible</span></span>
+          <span data-i18n="hero.location">Belgique · Remote · UE</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <p class="hero-lede reveal">
+          <span data-i18n="hero.lede.part1">Huit années à concevoir des </span><strong data-i18n="hero.lede.part2">architectures data</strong><span data-i18n="hero.lede.part3"> robustes et des </span><strong data-i18n="hero.lede.part4">pipelines ETL/ELT</strong><span data-i18n="hero.lede.part5"> performants — de Madagascar à La Réunion, de l'on-premise au cloud, du brut à l'</span><em data-i18n="hero.lede.part6">insight</em><span>.</span>
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary magnetic" href="#contact" data-i18n="hero.cta.primary">Travaillons ensemble →</a>
+          <a class="btn btn-ghost magnetic" id="cvLink" href="assets/cv/cv-fr.pdf" target="_blank" rel="noopener" data-i18n="hero.cta.secondary">Télécharger le CV</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll mono reveal">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <span class="arrow">↓</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat reveal">
+        <div class="num display"><span class="counter" data-target="8">0</span><em>+</em></div>
+        <div class="label" data-i18n="stats.years">années d'expérience<br>en data engineering</div>
+      </div>
+      <div class="stat reveal">
+        <div class="num display"><span class="counter" data-target="6">0</span></div>
+        <div class="label" data-i18n="stats.missions">missions clients<br>en Europe et océan Indien</div>
+      </div>
+      <div class="stat reveal">
+        <div class="num display"><span class="counter" data-target="20">0</span><em>+</em></div>
+        <div class="label" data-i18n="stats.techs">technologies maîtrisées<br>cloud, big data, BI &amp; ML</div>
+      </div>
+      <div class="stat reveal">
+        <div class="num display"><span class="counter" data-target="2">0</span></div>
+        <div class="label" data-i18n="stats.clouds">cloud providers<br>AWS &amp; Google Cloud</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="num display">— 01</span>
+        <span class="name mono" data-i18n="section.about">À propos</span>
+      </div>
+      <div class="about-body">
+        <p class="reveal">
+          <span data-i18n="about.p1.part1">Je m'appelle </span><strong>Danielson Rasoavelonirina</strong><span data-i18n="about.p1.part2">. Je conçois et déploie des </span><em data-i18n="about.p1.part3">data lakes</em><span>, </span><em data-i18n="about.p1.part4">data warehouses</em><span data-i18n="about.p1.part5"> et pipelines à grande échelle — principalement avec Apache Spark, Kafka, Airflow, Talend et l'écosystème Hadoop.</span>
+        </p>
+        <p class="reveal" data-i18n="about.p2">Mon terrain de jeu : transformer des sources hétérogènes en plateformes fiables qui alimentent des décisions business — chez Orange Madagascar (Data &amp; Orange Money), RAVATE, Argos Vétérinaire, Ghanty Groupe, et eTech Consulting.</p>
+        <p class="reveal" data-i18n="about.p3">Depuis 2026, je participe à la création du département Cybersécurité chez eTech : gouvernance, SecData (RBAC/ABAC, RGPD, monitoring) et SecIA (guardrails LLMs, robustesse adverse, déploiements sûrs).</p>
+        <p class="about-note reveal">
+          <span data-i18n="about.note.part1">Titulaire d'un </span><strong class="accent" data-i18n="about.note.part2">permis de travail belge</strong><span data-i18n="about.note.part3">, je recherche un poste stimulant en Data Engineering ou BI en Europe.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="expertise">
+  <div class="container">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="num display">— 02</span>
+        <span class="name mono" data-i18n="section.expertise">Expertise</span>
+      </div>
+      <div>
+        <h2 class="display section-title">
+          <span data-i18n="expertise.title.part1">Une stack qui couvre </span><em data-i18n="expertise.title.part2">tout le cycle</em><span data-i18n="expertise.title.part3"> de la donnée.</span>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Pipeline visualization -->
+    <div class="pipeline reveal">
+      <svg class="pipeline-svg" viewBox="0 0 1200 140" preserveAspectRatio="xMidYMid meet">
+        <!-- Connection lines -->
+        <line class="pipe-line" x1="120" y1="70" x2="350" y2="70" />
+        <line class="pipe-line" x1="450" y1="70" x2="680" y2="70" />
+        <line class="pipe-line" x1="780" y1="70" x2="1010" y2="70" />
+        <line class="pipe-line" x1="1110" y1="70" x2="1180" y2="70" />
+
+        <!-- Flowing data dots -->
+        <circle class="pipe-dot" r="4" />
+        <circle class="pipe-dot pipe-dot-2" r="4" />
+        <circle class="pipe-dot pipe-dot-3" r="4" />
+
+        <!-- Nodes -->
+        <g class="pipe-node">
+          <circle cx="80" cy="70" r="36" />
+          <text x="80" y="75" text-anchor="middle" data-i18n="pipeline.source">Sources</text>
+        </g>
+        <g class="pipe-node">
+          <circle cx="400" cy="70" r="36" />
+          <text x="400" y="75" text-anchor="middle">ETL / ELT</text>
+        </g>
+        <g class="pipe-node">
+          <circle cx="730" cy="70" r="36" />
+          <text x="730" y="75" text-anchor="middle">Data Lake</text>
+        </g>
+        <g class="pipe-node">
+          <circle cx="1060" cy="70" r="36" />
+          <text x="1060" y="75" text-anchor="middle">BI / ML</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="expertise-grid">
+      <div class="expertise-card reveal">
+        <div class="cat mono" data-i18n="expertise.cat.dataeng">Data Engineering</div>
+        <h3 class="display" data-i18n="expertise.dataeng.title">Pipelines &amp; orchestration</h3>
+        <div class="tags">
+          <span class="tag">Apache Spark</span><span class="tag">Kafka</span>
+          <span class="tag">Airflow</span><span class="tag">Nifi</span>
+          <span class="tag">Talend</span><span class="tag">Hadoop</span>
+          <span class="tag">Delta Lake</span><span class="tag">VTOM</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="cat mono" data-i18n="expertise.cat.cloud">Cloud</div>
+        <h3 class="display" data-i18n="expertise.cloud.title">AWS &amp; Google Cloud</h3>
+        <div class="tags">
+          <span class="tag">BigQuery</span><span class="tag">Dataflow</span>
+          <span class="tag">Pub/Sub</span><span class="tag">Lambda</span>
+          <span class="tag">EMR</span><span class="tag">RDS</span>
+          <span class="tag">S3</span><span class="tag">Terraform</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="cat mono" data-i18n="expertise.cat.bi">Business Intelligence</div>
+        <h3 class="display" data-i18n="expertise.bi.title">Visualisation &amp; reporting</h3>
+        <div class="tags">
+          <span class="tag">Power BI</span><span class="tag">Qlik Sense</span>
+          <span class="tag">Tableau</span><span class="tag">SAS Visual Analytics</span>
+          <span class="tag">SQL</span><span class="tag">DuckDB</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="cat mono" data-i18n="expertise.cat.security">Data &amp; AI Security</div>
+        <h3 class="display" data-i18n="expertise.security.title">Gouvernance &amp; sécurité</h3>
+        <div class="tags">
+          <span class="tag">RBAC / ABAC</span><span class="tag">RGPD</span>
+          <span class="tag">LLM Guardrails</span><span class="tag">Adversarial Tests</span>
+          <span class="tag">Data Masking</span><span class="tag">Audit</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="cat mono" data-i18n="expertise.cat.programming">Programming</div>
+        <h3 class="display" data-i18n="expertise.programming.title">Langages &amp; frameworks</h3>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">SQL</span>
+          <span class="tag">Shell</span><span class="tag">Node.js</span>
+          <span class="tag">Pandas</span><span class="tag">Polars</span>
+          <span class="tag">FastAPI</span><span class="tag">Flask</span>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="cat mono" data-i18n="expertise.cat.ml">Machine Learning</div>
+        <h3 class="display" data-i18n="expertise.ml.title">Modèles &amp; fine-tuning</h3>
+        <div class="tags">
+          <span class="tag">TensorFlow</span><span class="tag">PyTorch</span>
+          <span class="tag">Keras</span><span class="tag">Scikit-learn</span>
+          <span class="tag">BERT</span><span class="tag">LLMs / LoRA</span>
+          <span class="tag">YOLO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH MARQUEE -->
+<section class="marquee-section" aria-label="Technologies">
+  <div class="container">
+    <div class="marquee-label mono" data-i18n="marquee.label">— Stack technique en circulation continue</div>
+  </div>
+  <div class="marquee" id="techMarquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- populated by JS, includes iconify-icon + label -->
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="parcours" class="timeline">
+  <div class="container">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="num display">— 03</span>
+        <span class="name mono" data-i18n="section.parcours">Parcours</span>
+      </div>
+      <div>
+        <h2 class="display section-title">
+          <span data-i18n="timeline.title.part1">Huit ans </span><em data-i18n="timeline.title.part2">à construire</em><span data-i18n="timeline.title.part3"> de la donnée fiable.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="timeline-list">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-period mono" data-i18n="timeline.exp1.period">Janv. 2026 — Présent</div>
+        <div class="timeline-role">
+          <h3 class="display" data-i18n="timeline.exp1.role">Data &amp; AI Security</h3>
+          <div class="company">eTech Consulting Mg.</div>
+          <p data-i18n="timeline.exp1.desc">Membre du comité de création du département Cybersécurité. SecData : RBAC/ABAC, chiffrement, anonymisation, audit des pipelines (RGPD). SecIA : guardrails LLMs, tests de robustesse adverse, standards de déploiement.</p>
+        </div>
+        <div class="timeline-loc mono">Antananarivo<br>Madagascar</div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-period mono" data-i18n="timeline.exp2.period">Avril 2023 — Présent</div>
+        <div class="timeline-role">
+          <h3 class="display" data-i18n="timeline.exp2.role">Data Engineer &amp; Quality Manager</h3>
+          <div class="company" data-i18n="timeline.exp2.company">Orange Madagascar TM. (Sous-traitance)</div>
+          <p data-i18n="timeline.exp2.desc">Conception de pipelines ETL/ELT (Nifi, Kafka, Talend, Spark) pour la consolidation DATA GSM. Optimisation Data Lake / Warehouse (Hadoop, Delta Lake), monitoring Airflow / VTOM, dashboards Power BI &amp; Qlik Sense.</p>
+        </div>
+        <div class="timeline-loc mono">Antananarivo<br>Madagascar</div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-period mono" data-i18n="timeline.exp3.period">Avril 2022 — Avril 2023</div>
+        <div class="timeline-role">
+          <h3 class="display" data-i18n="timeline.exp3.role">Data Analyst — Orange Money</h3>
+          <div class="company" data-i18n="timeline.exp3.company">Orange Madagascar TM. (Sous-traitance)</div>
+          <p data-i18n="timeline.exp3.desc">Tableaux de bord stratégiques (SAS Base, Enterprise Guide, Visual Analytics) sur les KPIs Orange Money — transactions, dépôts, retraits, commissions, détection de fraude. Segmentation, prédiction du churn, gouvernance des données.</p>
+        </div>
+        <div class="timeline-loc mono">Antananarivo<br>Madagascar</div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-period mono" data-i18n="timeline.exp4.period">2021 — 2022</div>
+        <div class="timeline-role">
+          <h3 class="display" data-i18n="timeline.exp4.role">Data Manager &amp; Backend Developer</h3>
+          <div class="company">RAVATE</div>
+          <p data-i18n="timeline.exp4.desc">Infrastructure data cloud hybride (AWS &amp; on-premise) déployée via Terraform. Conception de bases AWS RDS pour gestion de stock e-commerce. CI/CD et backend Node.js / AWS Lambda.</p>
+        </div>
+        <div class="timeline-loc mono">Remote<br>La Réunion</div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-period mono" data-i18n="timeline.exp5.period">2020 — 2021</div>
+        <div class="timeline-role">
+          <h3 class="display" data-i18n="timeline.exp5.role">Data Engineer</h3>
+          <div class="company">Argos Vétérinaire &amp; Ghanty Groupe</div>
+          <p data-i18n="timeline.exp5.desc">Workflows inter-applicatifs avec Airflow, jobs ETL/ESB Talend, synchronisation quasi temps-réel SFTP ↔ Odoo entre les systèmes métiers.</p>
+        </div>
+        <div class="timeline-loc mono">Remote<br>Montpellier · La Réunion</div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-period mono" data-i18n="timeline.exp6.period">2018 — 2023</div>
+        <div class="timeline-role">
+          <h3 class="display" data-i18n="timeline.exp6.role">Data Scientist</h3>
+          <div class="company">eTech Consulting</div>
+          <p data-i18n="timeline.exp6.desc">Analyse exploratoire, expérimentation BERT &amp; LLMs (LLaMA, Qwen-T) avec LoRA pour réduction de charge GPU, PoC vision par ordinateur (YOLO), classification &amp; recommandation.</p>
+        </div>
+        <div class="timeline-loc mono">Antananarivo<br>Madagascar</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projets" class="projects">
+  <div class="container">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="num display">— 04</span>
+        <span class="name mono" data-i18n="section.projects">Sélection</span>
+      </div>
+      <div>
+        <h2 class="display section-title">
+          <span data-i18n="projects.title.part1">Quelques </span><em data-i18n="projects.title.part2">réalisations</em><span data-i18n="projects.title.part3"> représentatives.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="num display">— 01</div>
+        <h3 class="display" data-i18n="projects.p1.title">Plateforme Data Quality<br>Orange Madagascar</h3>
+        <p data-i18n="projects.p1.desc">Détection automatique d'anomalies sur les données GSM via modèles statistiques puis ML. Réduction significative des incohérences sur les indicateurs business.</p>
+        <div class="stack mono"><span>Python</span><span>Spark</span><span>Airflow</span><span>Power BI</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="num display">— 02</div>
+        <h3 class="display" data-i18n="projects.p2.title">SecIA — Guardrails LLMs<br>eTech Consulting</h3>
+        <p data-i18n="projects.p2.desc">Mise en place de barrières de sécurité pour modèles de langage (anti-injection, anti-fuite). Tests de robustesse adverse, standards de déploiement en production.</p>
+        <div class="stack mono"><span>LLM</span><span>Guardrails</span><span>RGPD</span><span>Audit</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="num display">— 03</div>
+        <h3 class="display" data-i18n="projects.p3.title">Migration Data Lake<br>Hadoop → Delta Lake</h3>
+        <p data-i18n="projects.p3.desc">Refonte de l'architecture de stockage avec gestion ACID et time-travel. Pipelines Spark optimisés, gain de performance sur les requêtes critiques.</p>
+        <div class="stack mono"><span>Delta Lake</span><span>Spark</span><span>Hadoop</span><span>SQL</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="num display">— 04</div>
+        <h3 class="display" data-i18n="projects.p4.title">Dashboards Orange Money<br>SAS Visual Analytics</h3>
+        <p data-i18n="projects.p4.desc">Reporting temps quasi réel pour les équipes Marketing, Finance et Risques : transactions, dépôts, retraits, fraude. Segmentation client &amp; prédiction de churn.</p>
+        <div class="stack mono"><span>SAS Base</span><span>SAS EG</span><span>SAS VA</span><span>SQL</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="num display">— 05</div>
+        <h3 class="display" data-i18n="projects.p5.title">Infra Data Hybride<br>RAVATE</h3>
+        <p data-i18n="projects.p5.desc">Déploiement IaC complet (Terraform) pour un système hybride AWS / on-premise. CI/CD pour pipelines data et backend Node.js.</p>
+        <div class="stack mono"><span>Terraform</span><span>AWS</span><span>Lambda</span><span>Node.js</span></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="num display">— 06</div>
+        <h3 class="display" data-i18n="projects.p6.title">Sync SFTP ↔ Odoo<br>Argos Vétérinaire</h3>
+        <p data-i18n="projects.p6.desc">Workflows Airflow et jobs Talend pour migration de données legacy vers Odoo, avec synchronisation continue inter-systèmes.</p>
+        <div class="stack mono"><span>Airflow</span><span>Talend</span><span>Python</span><span>Odoo</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION & CERTS -->
+<section id="education" class="education">
+  <div class="container">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="num display">— 05</span>
+        <span class="name mono" data-i18n="section.education">Formation</span>
+      </div>
+      <div>
+        <h2 class="display section-title">
+          <span data-i18n="education.title.part1">Apprendre </span><em data-i18n="education.title.part2">en continu</em><span>.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="education-list">
+      <div class="edu-item reveal">
+        <div class="edu-year mono">2018</div>
+        <div class="edu-content">
+          <h4 class="display">Data Engineering, Big Data &amp; ML</h4>
+          <div class="edu-issuer">Google Cloud Platform — Coursera</div>
+          <p data-i18n="education.gcp.desc">BigQuery, Dataflow, Cloud Storage, Pub/Sub, Cloud Composer, Vertex AI, BigQuery ML.</p>
+        </div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year mono">2020</div>
+        <div class="edu-content">
+          <h4 class="display">Neural Networks &amp; Deep Learning</h4>
+          <div class="edu-issuer">Coursera — DeepLearning.AI</div>
+          <p data-i18n="education.coursera.desc">Architectures Deep Learning, bonnes pratiques pour la structuration et l'évaluation de projets ML.</p>
+        </div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year mono">2020</div>
+        <div class="edu-content">
+          <h4 class="display">AI Programming</h4>
+          <div class="edu-issuer">Udacity</div>
+          <p data-i18n="education.udacity.desc">Python orienté Data, Pandas, NumPy. Fondamentaux de la programmation pour l'IA.</p>
+        </div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-year mono">2016 — 2017</div>
+        <div class="edu-content">
+          <h4 class="display" data-i18n="education.espa.title">Bachelor en Télécommunication</h4>
+          <div class="edu-issuer">E.S.P.A — Antananarivo</div>
+          <p data-i18n="education.espa.desc">Spécialisation en Système de Traitement d'Information (S.T.I).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-grid">
+      <div class="section-label">
+        <span class="num display" style="color: var(--bg-soft);">— 06</span>
+        <span class="name mono" style="color: rgba(250,248,245,0.5);" data-i18n="section.contact">Contact</span>
+      </div>
+      <div>
+        <h2 class="display contact-title">
+          <span data-i18n="contact.title.part1">Une mission, un projet,<br>une </span><em data-i18n="contact.title.part2">conversation</em><span data-i18n="contact.title.part3"> à démarrer&nbsp;?</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-block reveal">
+        <div class="label mono" data-i18n="contact.email">Email</div>
+        <a href="mailto:d.rasoavelonirina@gmail.com" class="magnetic">d.rasoavelonirina@gmail.com</a>
+      </div>
+      <div class="contact-block reveal">
+        <div class="label mono" data-i18n="contact.phone">Téléphone</div>
+        <p>(+261) 34 71 147 49</p>
+      </div>
+      <div class="contact-block reveal">
+        <div class="label mono">LinkedIn</div>
+        <a href="https://www.linkedin.com/in/danielson1406" target="_blank" rel="noopener" class="magnetic">linkedin.com/in/danielson1406</a>
+      </div>
+      <div class="contact-block reveal">
+        <div class="label mono">GitHub</div>
+        <a href="https://github.com/Rasoavelonirina" target="_blank" rel="noopener" class="magnetic">github.com/Rasoavelonirina</a>
+      </div>
+      <div class="contact-block reveal">
+        <div class="label mono" data-i18n="contact.location">Localisation</div>
+        <p>Antananarivo · Bruxelles</p>
+      </div>
+      <div class="contact-block reveal">
+        <div class="label mono" data-i18n="contact.cv">CV</div>
+        <a id="cvLink2" href="assets/cv/cv-fr.pdf" target="_blank" rel="noopener" class="magnetic" data-i18n="contact.cv.link">Télécharger (FR · PDF)</a>
+      </div>
+    </div>
+
+    <div class="contact-cta reveal">
+      <a href="mailto:d.rasoavelonirina@gmail.com" class="btn btn-large magnetic">
+        <span data-i18n="contact.cta">Démarrer une conversation</span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="mono">© 2026 Danielson Rasoavelonirina</div>
+    <div class="mono" data-i18n="footer.tagline">Conçu avec rigueur · build with care</div>
+  </div>
+</footer>
+
+<!-- GSAP via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/tech-icons.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
