@@ -490,13 +490,22 @@ window.PortfolioAnimations = (function () {
     document.addEventListener('mouseenter', () => { dot.style.opacity = '1'; ring.style.opacity = '1'; });
   }
 
-  /* ---------- Loader ---------- */
+  /* ---------- Loader (skips on revisits within same session) ---------- */
   function runLoader() {
     return new Promise(resolve => {
       const loader = document.getElementById('loader');
+      if (!loader) { resolve(); return; }
+
+      try {
+        if (sessionStorage.getItem('portfolio.loaderShown') === '1') {
+          loader.classList.add('is-done');
+          setTimeout(resolve, 50);
+          return;
+        }
+      } catch (_) {}
+
       const progress = document.getElementById('loaderProgress');
       const status = document.getElementById('loaderStatus');
-      if (!loader) { resolve(); return; }
 
       const stages = [
         { pct: 22, text: 'Loading sources…' },
@@ -508,6 +517,7 @@ window.PortfolioAnimations = (function () {
       function next() {
         if (i >= stages.length) {
           loader.classList.add('is-done');
+          try { sessionStorage.setItem('portfolio.loaderShown', '1'); } catch (_) {}
           setTimeout(resolve, 600);
           return;
         }

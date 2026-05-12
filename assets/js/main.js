@@ -128,9 +128,9 @@
       if (e.key === 'Escape' && links.classList.contains('is-open')) close();
     });
 
-    // Close on resize back to desktop
+    // Close on resize back to desktop (matches CSS breakpoint at 680px)
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 720 && links.classList.contains('is-open')) close();
+      if (window.innerWidth > 680 && links.classList.contains('is-open')) close();
     });
   }
 
