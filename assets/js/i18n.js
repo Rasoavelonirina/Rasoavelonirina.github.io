@@ -27,7 +27,7 @@ window.I18N = {
     "hero.lede.part4": "pipelines ETL/ELT",
     "hero.lede.part5": " performants — de Madagascar à La Réunion, de l'on-premise au cloud, du brut à l'",
     "hero.lede.part6": "insight",
-    "hero.cta.primary": "Travaillons ensemble →",
+    "hero.cta.primary": "Échangeons →",
     "hero.cta.secondary": "Télécharger le CV",
     "hero.scroll": "Scroll",
 
@@ -128,9 +128,9 @@ window.I18N = {
     "education.espa.title": "Bachelor en Télécommunication",
     "education.espa.desc": "Spécialisation en Système de Traitement d'Information (S.T.I).",
 
-    "contact.title.part1": "Une mission, un projet,<br>une ",
-    "contact.title.part2": "conversation",
-    "contact.title.part3": " à démarrer&nbsp;?",
+    "contact.title.part1": "Une idée, des questions,<br>un ",
+    "contact.title.part2": "café",
+    "contact.title.part3": " &nbsp;?",
     "contact.email": "Email",
     "contact.phone": "Téléphone",
     "contact.location": "Localisation",
@@ -141,12 +141,12 @@ window.I18N = {
     "footer.tagline": "Conçu avec rigueur · build with care",
 
     // ========== BENTO ADDITIONS ==========
-    "hero.tag": "Disponible pour mission · Belgique · UE",
+    "hero.tag": "Centres d'intérêt · Belgique · UE",
     "hero.greet": "Salut,",
     "hero.name": "je suis Danielson.",
     "hero.role": "Data Engineer.",
-    "hero.lede": "+8 ans à construire des pipelines, data lakes et plateformes BI fiables chez eTech Consulting Madagascar — pour Orange, RAVATE, Argos et bientôt en Europe.",
-    "hero.cta1": "Travaillons ensemble",
+    "hero.lede": "+8 ans à construire des pipelines, data lakes et plateformes BI fiables chez eTech Consulting Madagascar — pour Orange, RAVATE, Argos et clients européens.",
+    "hero.cta1": "Échangeons",
     "hero.cta2": "Télécharger CV",
 
     "stat.years": "années en data engineering",
@@ -229,8 +229,8 @@ window.I18N = {
     "career.e7.desc": "Expérimentation BERT &amp; LLMs (LLaMA, Qwen-T) avec LoRA. PoC vision (YOLO), classification &amp; recommandation.",
 
     "contact.tag": "Disponible · réponse sous 24h",
-    "contact.title.part1": "Une mission,<br>un projet,<br>",
-    "contact.title.part2": "une conversation ?",
+    "contact.title.part1": "Une idée,<br>des questions,<br>",
+    "contact.title.part2": "un café ?",
     "contact.cta": "Démarrer une conversation",
     "contact.phone": "Téléphone",
     "contact.location": "Localisation",
@@ -261,7 +261,7 @@ window.I18N = {
     "hero.lede.part4": "ETL/ELT pipelines",
     "hero.lede.part5": " — from Madagascar to La Réunion, from on-premise to cloud, from raw data to ",
     "hero.lede.part6": "insight",
-    "hero.cta.primary": "Let's work together →",
+    "hero.cta.primary": "Let's talk →",
     "hero.cta.secondary": "Download CV",
     "hero.scroll": "Scroll",
 
@@ -362,9 +362,9 @@ window.I18N = {
     "education.espa.title": "Bachelor in Telecommunications",
     "education.espa.desc": "Specialization in Information Processing Systems (S.T.I).",
 
-    "contact.title.part1": "A mission, a project,<br>a ",
-    "contact.title.part2": "conversation",
-    "contact.title.part3": " to start?",
+    "contact.title.part1": "An idea, some questions,<br>a ",
+    "contact.title.part2": "coffee",
+    "contact.title.part3": " ?",
     "contact.email": "Email",
     "contact.phone": "Phone",
     "contact.location": "Location",
@@ -375,12 +375,12 @@ window.I18N = {
     "footer.tagline": "Designed with rigor · built with care",
 
     // ========== BENTO ADDITIONS ==========
-    "hero.tag": "Available for hire · Belgium · EU",
+    "hero.tag": "Open to discussions · Belgium · EU",
     "hero.greet": "Hi,",
     "hero.name": "I'm Danielson.",
     "hero.role": "Data Engineer.",
-    "hero.lede": "8+ years building reliable pipelines, data lakes and BI platforms at eTech Consulting Madagascar — for Orange, RAVATE, Argos, and soon in Europe.",
-    "hero.cta1": "Let's work together",
+    "hero.lede": "8+ years building reliable pipelines, data lakes and BI platforms at eTech Consulting Madagascar — for Orange, RAVATE, Argos and European clients.",
+    "hero.cta1": "Let's talk",
     "hero.cta2": "Download CV",
 
     "stat.years": "years in data engineering",
@@ -463,8 +463,8 @@ window.I18N = {
     "career.e7.desc": "BERT &amp; LLM experimentation (LLaMA, Qwen-T) with LoRA. Computer vision PoC (YOLO), classification &amp; recommendation.",
 
     "contact.tag": "Available · response within 24h",
-    "contact.title.part1": "A mission,<br>a project,<br>",
-    "contact.title.part2": "a conversation?",
+    "contact.title.part1": "An idea,<br>some questions,<br>",
+    "contact.title.part2": "a coffee?",
     "contact.cta": "Start a conversation",
     "contact.phone": "Phone",
     "contact.location": "Location",
